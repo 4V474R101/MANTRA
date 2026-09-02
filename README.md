@@ -34,6 +34,7 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 
 <h2>WORKING</h2>
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ea25b1b-82b7-4e75-8603-eb07561e1b18" />
 
 
 
