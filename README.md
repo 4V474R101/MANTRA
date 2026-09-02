@@ -37,6 +37,35 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ea25b1b-82b7-4e75-8603-eb07561e1b18" />
 
 
+┌─────────┐    natural language     ┌─────────────┐
+│   YOU    │ ─────────────────────→  │  Claude AI   │
+│          │ ←─────────────────────  │  (LLM brain) │
+└─────────┘    final report         └──────┬──────┘
+                                           │
+                                    MCP JSON-RPC
+                                    (stdin/stdout)
+                                           │
+                                    ┌──────▼──────┐
+                                    │ mantra_bridge│
+                                    │ (translator) │
+                                    └──────┬──────┘
+                                           │
+                                      HTTP POST
+                                    (localhost:8888)
+                                           │
+                                    ┌──────▼──────┐
+                                    │mantra server │
+                                    │ (executor)   │
+                                    └──────┬──────┘
+                                           │
+                                      popen()
+                                           │
+                                    ┌──────▼──────┐
+                                    │ nmap/nuclei/ │
+                                    │ sqlmap/etc   │
+                                    └─────────────┘
+
+
 
 
 </div>
