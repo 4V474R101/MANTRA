@@ -36,8 +36,12 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ea25b1b-82b7-4e75-8603-eb07561e1b18" />
 <br><br>
-
 <div align="center">
+
+# 🧘 MANTRA
+### Model Context Protocol · Autonomous Security Suite
+
+---
 
 MANTRA is three layers: brain, translator, executor.
 
@@ -45,14 +49,15 @@ MANTRA is three layers: brain, translator, executor.
 
 **Bridge (Translator)** sits between LLM and the server. LLM speaks MCP protocol over stdin/stdout. Server speaks HTTP. Bridge converts one to the other. No logic, no decisions — pure format conversion.
 
-**Server (Executor)** receives HTTP requests, builds shell commands, runs tools via `popen()`, captures stdout, and returns JSON. It knows 100+ security tools — nmap, nuclei, sqlmap, hydra, metasploit, gobuster, subfinder, and more. It doesn't think. It executes what it's told and returns raw output.
+**Server (Executor)** receives HTTP requests, builds shell commands, runs tools via `popen()`, captures stdout, and returns JSON. It knows 100+ security tools — `nmap`, `nuclei`, `sqlmap`, `hydra`, `metasploit`, `gobuster`, `subfinder`, and more. It doesn't think. It executes what it's told and returns raw output.
 
 **The loop:** You give a goal → LLM picks a tool → bridge forwards → server executes → output returns → LLM analyzes → picks next tool → repeats until goal is met or nothing left to try.
 
 Key thing: MANTRA doesn't replace these tools. It wraps them so AI can use them autonomously. The real power is LLM chaining tools intelligently — running subfinder, feeding results to httpx, then scanning live hosts with nuclei, all without you typing a single command.
 
+---
 
-
+</div>
 
 </div>
 
