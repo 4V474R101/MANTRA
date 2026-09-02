@@ -1,10 +1,10 @@
 
 A<div align="center">
 
-<img width="2000" height="2000" alt="image" src="https://github.com/user-attachments/assets/720705e1-7459-4b25-977a-909ba00c245c" />
+<img  width="308" height="351" alt="image" src="https://github.com/user-attachments/assets/720705e1-7459-4b25-977a-909ba00c245c" />
 
-# 🐱📅 CAT-C
-CAT-C - Production Python C2 implant that weaponizes legitimate Google Calendar API infrastructure for bidirectional command-and-control. Mirrors sophisticated APT41 calendar abuse TTPs with enterprise-grade stealth across Windows/Linux/macOS environments. Deploy silently, beacon via obfuscated events, execute operator commands through description fields. Zero forensic footprint. 🐱📅💀.
+# 🧘‍♂️ MANTRA
+MANTRA - Production Python C2 implant that weaponizes legitimate Google Calendar API infrastructure for bidirectional command-and-control. Mirrors sophisticated APT41 calendar abuse TTPs with enterprise-grade stealth across Windows/Linux/macOS environments. Deploy silently, beacon via obfuscated events, execute operator commands through description fields. Zero forensic footprint. 🐱📅💀.
 
 <div align="center">
 
