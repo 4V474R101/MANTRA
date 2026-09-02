@@ -32,6 +32,11 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 | Binary/PWN/CTF | GDB, Ghidra, ROP gadgets, symbolic execution |
 | Forensics/Stego | Memory analysis, file carving, steganography |
 
+<h2>HOW TO USE</h2>
+
+
+<img width="1000" height="560" alt="unmask" src="https://github.com/user-attachments/assets/0b2f6dd6-b52c-41e0-8488-9847ac278ebc" />
+
 
 
 </div>
