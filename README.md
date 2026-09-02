@@ -4,26 +4,33 @@ A<div align="center">
 <img  width="308" height="351" alt="image" src="https://github.com/user-attachments/assets/720705e1-7459-4b25-977a-909ba00c245c" />
 
 # 🧘‍♂️ MANTRA
-MANTRA - Production Python C2 implant that weaponizes legitimate Google Calendar API infrastructure for bidirectional command-and-control. Mirrors sophisticated APT41 calendar abuse TTPs with enterprise-grade stealth across Windows/Linux/macOS environments. Deploy silently, beacon via obfuscated events, execute operator commands through description fields. Zero forensic footprint. 🐱📅💀.
+MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server executes nmap, nuclei, sqlmap, hydra, gobuster, subfinder, metasploit, and more. MCP bridge connects Claude Desktop, Cursor, Windsurf, or any MCP-compatible AI-Desk Application. Agent reasons over tool output, plans next step, chains attacks autonomously. Built for pentesting, red teaming, bug bounty, CTF, and security research.
 
 <div align="center">
 
-## 🔥 **29 OPSEC FEATURES**
-
-| **Detection Evasion** | **Command Protocol** | **Network Stealth** | **Execution Safety** |
-|----------------------|---------------------|--------------------|---------------------|
-| 🔒 **Encrypted IP obfuscation** | 📝 **Base64 event titles** | ⏱️ **Jittered polling 2.5-4.5s** | 🛡️ **Sanitized execution** |
-| 🔐 **SHA256 change detection** | 🔄 **Title rotation (3x CMD/OUT)** | 😴 **Dynamic sleep variance** | ✂️ **8KB output limit** |
-| 🤫 **Silent error handling** | ✅ **C/T/S prefix validation** | 🌏 **Asia/Kolkata timezone** | ⏳ **5s timeout protection** |
-| 💾 **Memory-only execution** | ➤ **Reset markers + ACK** | 🔀 **Cycle timing rotation** | 🚪 **6x shutdown keywords** |
-| 🐄 **Cowsay graceful exit** | 📡 **5x command prefixes** | 🔗 **HTTPS→HTTP fallback** | 🔄 **Auto-recovery beacon** |
-| | 🎫 **Session:base64 format** | 🔓 **SSL bypass support** | |
-| | | 🌐 **No DNS resolution** | |
-| | | 📅 **Google Calendar API v3** | |
-| | | ⚙️ **Remote config fetch** | |
-| | | ⏰ **24h CMD/12m OUT TTL** | |
-| | | 🔍 **Multi-query search** | |
-| | | 📡 **Self-beaconing startup** | |
+## 🔥 **FEATURES**
+| Feature | Description |
+|---------|-------------|
+| MCP Protocol | JSON-RPC bridge connects any MCP-compatible AI agent |
+| 100+ Security Tools | Nmap, nuclei, sqlmap, hydra, metasploit, and more |
+| AI Agent Loop | Agent plans, executes, analyzes output, decides next step autonomously |
+| Dynamic Tool Detection | Auto-scans system for installed tools at startup |
+| Multi-Platform | Claude Desktop, Cursor, Windsurf, Copilot, Cline, Aider |
+| Smart Scan Engine | AI-driven target analysis, tool selection, parameter optimization |
+| Attack Chaining | Auto-chains recon → scan → exploit based on results |
+| CVE Intelligence | Live CVE monitoring, exploit generation from advisories |
+| Bug Bounty Workflows | Pre-built recon, vuln hunting, auth bypass, file upload flows |
+| Payload Generation | Buffer, cyclic, random payloads + AI-generated attack suites |
+| Process Management | Launch, pause, resume, terminate long-running tools |
+| Result Caching | Cache tool output, skip repeated scans |
+| Error Recovery | Auto-retry failed tools, suggest alternatives |
+| File Operations | Create, read, modify, delete workspace files |
+| Python Integration | Install packages, execute scripts on the fly |
+| Visual Dashboards | Vulnerability cards, scan summaries, system metrics |
+| API Security Suite | GraphQL, JWT, REST fuzzing, schema analysis |
+| Cloud/Container | AWS, GCP, Azure, K8s, Docker security audits |
+| Binary/PWN/CTF | GDB, Ghidra, ROP gadgets, symbolic execution |
+| Forensics/Stego | Memory analysis, file carving, steganography |
 
 
 
