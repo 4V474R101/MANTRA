@@ -4,7 +4,7 @@ A<div align="center">
 <img  width="308" height="351" alt="image" src="https://github.com/user-attachments/assets/720705e1-7459-4b25-977a-909ba00c245c" />
 
 # 🧘‍♂️ MANTRA
-MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server executes nmap, nuclei, sqlmap, hydra, gobuster, subfinder, metasploit, and more. MCP bridge connects Claude Desktop, Cursor, Windsurf, or any MCP-compatible AI-Desk Application. Agent reasons over tool output, plans next step, chains attacks autonomously. Built for pentesting, red teaming, bug bounty, CTF, and security research.
+MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server executes nmap, nuclei, sqlmap, hydra, gobuster, subfinder, metasploit, and more. MCP bridge connects LLM Desktop, Cursor, Windsurf, or any MCP-compatible AI-Desk Application. Agent reasons over tool output, plans next step, chains attacks autonomously. Built for pentesting, red teaming, bug bounty, CTF, and security research.
 
 <div align="center">
 
@@ -15,7 +15,7 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 | 100+ Security Tools | Nmap, nuclei, sqlmap, hydra, metasploit, and more |
 | AI Agent Loop | Agent plans, executes, analyzes output, decides next step autonomously |
 | Dynamic Tool Detection | Auto-scans system for installed tools at startup |
-| Multi-Platform | Claude Desktop, Cursor, Windsurf, Copilot, Cline, Aider |
+| Multi-Platform | LLM Desktop, Cursor, Windsurf, Copilot, Cline, Aider |
 | Smart Scan Engine | AI-driven target analysis, tool selection, parameter optimization |
 | Attack Chaining | Auto-chains recon → scan → exploit based on results |
 | CVE Intelligence | Live CVE monitoring, exploit generation from advisories |
@@ -37,33 +37,18 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ea25b1b-82b7-4e75-8603-eb07561e1b18" />
 
 
-┌─────────┐    natural language     ┌─────────────┐
-│   YOU    │ ─────────────────────→  │  Claude AI   │
-│          │ ←─────────────────────  │  (LLM brain) │
-└─────────┘    final report         └──────┬──────┘
-                                           │
-                                    MCP JSON-RPC
-                                    (stdin/stdout)
-                                           │
-                                    ┌──────▼──────┐
-                                    │ mantra_bridge│
-                                    │ (translator) │
-                                    └──────┬──────┘
-                                           │
-                                      HTTP POST
-                                    (localhost:8888)
-                                           │
-                                    ┌──────▼──────┐
-                                    │mantra server │
-                                    │ (executor)   │
-                                    └──────┬──────┘
-                                           │
-                                      popen()
-                                           │
-                                    ┌──────▼──────┐
-                                    │ nmap/nuclei/ │
-                                    │ sqlmap/etc   │
-                                    └─────────────┘
+
+MANTRA is three layers: brain, translator, executor.
+
+**LLM (Brain)** receives your goal in plain English. It breaks the goal into steps, picks which security tool to run first, and generates the right arguments. After each tool runs, LLM reads the output, reasons over results, and decides the next action. It chains tools together — recon feeds into scanning, scanning feeds into exploitation. All decision-making lives here.
+
+**Bridge (Translator)** sits between LLM and the server. LLM speaks MCP protocol over stdin/stdout. Server speaks HTTP. Bridge converts one to the other. No logic, no decisions — pure format conversion.
+
+**Server (Executor)** receives HTTP requests, builds shell commands, runs tools via `popen()`, captures stdout, and returns JSON. It knows 100+ security tools — nmap, nuclei, sqlmap, hydra, metasploit, gobuster, subfinder, and more. It doesn't think. It executes what it's told and returns raw output.
+
+**The loop:** You give a goal → LLM picks a tool → bridge forwards → server executes → output returns → LLM analyzes → picks next tool → repeats until goal is met or nothing left to try.
+
+Key thing: MANTRA doesn't replace these tools. It wraps them so AI can use them autonomously. The real power is LLM chaining tools intelligently — running subfinder, feeding results to httpx, then scanning live hosts with nuclei, all without you typing a single command.
 
 
 
