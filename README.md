@@ -40,25 +40,15 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 <div align="center">
   <div style="max-width: 800px; text-align: left;">
 
-# 🧘 MANTRA
-### Model Context Protocol · Autonomous Security Suite
+# How It Works
 
----
-
-MANTRA is three layers: brain, translator, executor.
-
-**LLM (Brain)** receives your goal in plain English. It breaks the goal into steps, picks which security tool to run first, and generates the right arguments. After each tool runs, LLM reads the output, reasons over results, and decides the next action. It chains tools together — recon feeds into scanning, scanning feeds into exploitation. All decision-making lives here.
-
-**Bridge (Translator)** sits between LLM and the server. LLM speaks MCP protocol over stdin/stdout. Server speaks HTTP. Bridge converts one to the other. No logic, no decisions — pure format conversion.
-
-**Server (Executor)** receives HTTP requests, builds shell commands, runs tools via `popen()`, captures stdout, and returns JSON. It knows 100+ security tools — `nmap`, `nuclei`, `sqlmap`, `hydra`, `metasploit`, `gobuster`, `subfinder`, and more. It doesn't think. It executes what it's told and returns raw output.
-
-**The loop:** You give a goal → LLM picks a tool → bridge forwards → server executes → output returns → LLM analyzes → picks next tool → repeats until goal is met or nothing left to try.
-
-Key thing: MANTRA doesn't replace these tools. It wraps them so AI can use them autonomously. The real power is LLM chaining tools intelligently — running subfinder, feeding results to httpx, then scanning live hosts with nuclei, all without you typing a single command.
+1. **AI Agent Connection** - Claude, GPT, or other MCP-compatible agents connect via FastMCP protocol  
+2. **Intelligent Analysis** - Decision engine analyzes targets and selects optimal testing strategies  
+3. **Autonomous Execution** - AI agents execute comprehensive security assessments  
+4. **Real-time Adaptation** - System adapts based on results and discovered vulnerabilities  
+5. **Advanced Reporting** - Visual output with vulnerability cards and risk analysis
 
   </div>
-</div>
 </div>
 
 <div align="left">
