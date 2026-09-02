@@ -1,5 +1,5 @@
 
-A<div align="center">
+<div align="center">
 
 <img  width="308" height="351" alt="image" src="https://github.com/user-attachments/assets/720705e1-7459-4b25-977a-909ba00c245c" />
 
@@ -34,19 +34,22 @@ MANTRA — MCP server bridging AI agents to 100+ security tools. C++ server exec
 
 <h2>WORKING</h2>
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ea25b1b-82b7-4e75-8603-eb07561e1b18" />
+<img width="100" height="560" alt="image" src="https://github.com/user-attachments/assets/7ea25b1b-82b7-4e75-8603-eb07561e1b18" />
 <br><br>
 
-<div align="center">
+<div align="left">
   <div style="max-width: 800px; text-align: left;">
 
-# How It Works
+## How MANTRA Works
 
-1. **AI Agent Connection** - Claude, GPT, or other MCP-compatible agents connect via FastMCP protocol  
-2. **Intelligent Analysis** - Decision engine analyzes targets and selects optimal testing strategies  
-3. **Autonomous Execution** - AI agents execute comprehensive security assessments  
-4. **Real-time Adaptation** - System adapts based on results and discovered vulnerabilities  
-5. **Advanced Reporting** - Visual output with vulnerability cards and risk analysis
+MANTRA is three layers: **brain**, **translator**, **executor**.
+
+**1.Claude (Brain)** receives your goal in plain English. It breaks the goal into steps, picks which security tool to run, and generates the right arguments. After each tool runs, Claude reads the output, reasons over results, and decides the next action. It chains tools together — recon feeds into scanning, scanning feeds into exploitation.
+
+**1.Bridge (Translator)** sits between Claude and the server. Claude speaks MCP protocol over stdin/stdout. Server speaks HTTP. Bridge converts one to the other. No logic, no decisions — pure format conversion.
+
+**3.Server (Executor)** receives HTTP requests, builds shell commands, runs tools via `popen()`, captures stdout, and returns JSON. It knows 100+ security tools — nmap, nuclei, sqlmap, hydra, metasploit, gobuster, subfinder, and more. It doesn't think. It executes what it's told and returns raw output.
+
 
   </div>
 </div>
