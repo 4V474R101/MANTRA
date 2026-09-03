@@ -206,6 +206,9 @@ curl http://127.0.0.1:8888/help
 ---
 
 ## Screenshots
+<p align="center">
+  <img src="mcp-configs.png" alt="mcp-ref"  height="1920" width="1080"/>
+</p>
 
 
 
