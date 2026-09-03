@@ -3,7 +3,7 @@
   <img src="MANTRA.png" alt="MANTRA" width="400"/>
 </p>
 
-<h1 align="center">MANTRA</h1>
+<h1 align="center">🧘 MANTRA</h1>
 
 <p align="center">
   <b>MCP server bridging AI agents to 100+ security tools</b><br>
@@ -20,7 +20,7 @@
 
 ---
 
-## 🔥 How MANTRA Works
+## 🛠 How MANTRA Works
 
 MANTRA is three layers: **brain**, **translator**, **executor**.
 
@@ -226,17 +226,17 @@ https://github.com/0x4m4/hexstrike-ai
 
 ## ⚠️ Security Concerns 
 
-MANTRA is a Model Context Protocol (MCP)-based agent framework and security suite designed to assist with cybersecurity research, authorized penetration testing, CTF competitions, defensive technology research, and educational training.
 
-EDUCATIONAL AND AUTHORIZED USE ONLY
-MANTRA is provided strictly for educational purposes and authorized security research.
-This tool may only be used in the following scenarios:
-Systems, networks, or applications that you own.
-Environments where you have obtained explicit written authorization from the system owner.
-Testing conducted strictly within the defined scope of a bug bounty program.
-CTF (Capture The Flag) events or authorized red-team engagements.
-It is strictly prohibited to use MANTRA for any unauthorized access, intrusion, data exfiltration, credential theft, or any other illegal, malicious, or unethical activity.
+<div align="center">
 
+<img width="320" height="240" alt="FBI Open Up" src="https://media.tenor.com/_YqdfwYLiQ4AAAAM/traffic-fbi-open-up.gif" />
+</div>
 
+<div style="background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%); 
+            padding: 15px; border-radius: 12px; border-left: 5px solid #ff4757;">
+
+<p align="center"> 
+<b>MANTRA</b> is a Model Context Protocol (MCP)-based agent framework and security suite designed to assist with cybersecurity research, authorized penetration testing, CTF competitions, defensive technology research, and educational training.
+</p>
 
 </div>
