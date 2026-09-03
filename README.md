@@ -211,9 +211,31 @@ curl http://127.0.0.1:8888/help
 </p>
 
 <p align="center">
-  <img src="mcp-test.png" alt="mcp-ref"  height="1920" width="1080"/>
+  <img src="mantra-test.png" alt="mcp-test"  height="1920" width="1080"/>
 </p>
 
+## 📕 References   
+
+https://www.praetorian.com/blog/mcp-server-security-the-hidden-ai-attack-surface/
+https://medium.com/seercurity-spotlight/offensive-mcp-and-mcp-for-offensive-1ac7ffe82fb6
+
+## 🌟 CREDITS
+
+https://github.com/0x4m4/hexstrike-ai 
+
+
+## ⚠️ Security Concerns 
+
+MANTRA is a Model Context Protocol (MCP)-based agent framework and security suite designed to assist with cybersecurity research, authorized penetration testing, CTF competitions, defensive technology research, and educational training.
+
+EDUCATIONAL AND AUTHORIZED USE ONLY
+MANTRA is provided strictly for educational purposes and authorized security research.
+This tool may only be used in the following scenarios:
+Systems, networks, or applications that you own.
+Environments where you have obtained explicit written authorization from the system owner.
+Testing conducted strictly within the defined scope of a bug bounty program.
+CTF (Capture The Flag) events or authorized red-team engagements.
+It is strictly prohibited to use MANTRA for any unauthorized access, intrusion, data exfiltration, credential theft, or any other illegal, malicious, or unethical activity.
 
 
 
