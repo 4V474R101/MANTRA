@@ -45,21 +45,17 @@ MANTRA doesn't replace security tools. It wraps them so AI can use them **autono
 
 ## ⚡ Prerequisites
 
-```bash
-sudo apt install build-essential libcurl4-openssl-dev
-```
-
-Get single-header dependencies (place in MANTRA directory):
+Install Dependices and packages :
 
 ```bash
-wget https://raw.githubusercontent.com/nlohmann/json/develop/single_include/nlohmann/json.hpp -P nlohmann/
-wget https://raw.githubusercontent.com/yhirose/cpp-httplib/master/httplib.h
+chmod +x install.sh && ./install.sh
 ```
 
 ---
 
 ## 🔨 Build
 
+Linux & MacOS
 ```bash
 # Build server
 g++ -std=c++17 -pthread main.cpp -lcurl -o mantra
@@ -67,6 +63,17 @@ g++ -std=c++17 -pthread main.cpp -lcurl -o mantra
 # Build MCP bridge
 g++ -std=c++17 mantra_mcp.cpp -lcurl -o mantra_bridge
 ```
+
+Windows
+```bash
+# Build server
+g++ -std=c++17 -pthread main.cpp -lcurl -o mantra.exe
+
+# Build MCP bridge
+g++ -std=c++17 mantra_mcp.cpp -lcurl -o mantra_bridge.exe
+```
+
+
 
 ---
 
@@ -91,9 +98,9 @@ Add to your LLM Desktop config:
 
 | OS | Config Path |
 |----|------------|
-| Linux | `~/.config/LLM/LLM_desktop_config.json` |
-| macOS | `~/Library/Application Support/LLM/LLM_desktop_config.json` |
-| Windows | `%APPDATA%\LLM\LLM_desktop_config.json` |
+| Linux | `~/.config/{LLM}/LLM_desktop_config.json` |
+| macOS | `~/Library/Application Support/{LLM}/LLM_desktop_config.json` |
+| Windows | `%APPDATA%\{LLM}\LLM_desktop_config.json` |
 
 ```json
 {
@@ -198,9 +205,7 @@ curl http://127.0.0.1:8888/help
 
 ---
 
-## ⚠️ Disclaimer
-
-This tool is intended for **authorized security testing, educational purposes, and CTF competitions only**. Always obtain proper authorization before testing any system you do not own. Unauthorized access to computer systems is illegal.
+## Screenshots
 
 
 
